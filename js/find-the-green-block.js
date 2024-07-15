@@ -12,7 +12,7 @@ const init = function () {
   randomNumber = Math.trunc(Math.random() * amountOfItems) + 1;
 };
 
-// Items Toevoegen
+// Blokken Toevoegen
 const addGridItem = function () {
   for (let item = 0; item < amountOfItems; item++) {
     container.insertAdjacentHTML(
@@ -30,7 +30,7 @@ init();
 addGridItem();
 let item = document.querySelectorAll('.grid-item');
 
-// Item Selecteren en Beoordelen
+// Blok Selecteren en Beoordelen
 container.addEventListener('click', function (e) {
   let clickedItem = e.target.id;
   if (clickedItem == randomNumber) {
